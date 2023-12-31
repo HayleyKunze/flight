@@ -1,9 +1,9 @@
 <?php
 
 declare(strict_types=1);
-/**
- * Flight: An extensible micro-framework.
- *
+/  
+   Flight: An extensible micro-framework.
+  
  * @copyright   Copyright (c) 2011, Mike Cao <mike@mikecao.com>
  * @license     MIT, http://flightphp.com/license
  */
@@ -154,3 +154,4 @@ final class Route
         return \count(array_intersect([$method, '*'], $this->methods)) > 0;
     }
 }
+ 
