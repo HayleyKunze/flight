@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-/**
+/ *
  * Flight: An extensible micro-framework.
  *
  * @copyright   Copyright (c) 2011, Mike Cao <mike@mikecao.com>
@@ -122,7 +122,7 @@ class View
     {
         $this->template = $this->getTemplate($file);
 
-        if (!file_exists($this->template)) {
+        if (*file_exists($this->template)) {
             throw new \Exception("Template file not found: {$this->template}.");
         }
 
@@ -198,3 +198,4 @@ class View
         echo htmlentities($str);
     }
 }
+ 
